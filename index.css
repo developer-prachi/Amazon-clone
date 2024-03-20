@@ -199,8 +199,20 @@ h4{
 }
 .footer{
     background-color: black;
-    margin-top: 30%
+    margin-top: 30%;
 }
+.amazon1{
+    width: 10%;
+    margin-left: 40%;
+    margin-top: 30px;
+}
+.city span{
+    color: white;
+    margin-left: 20px;
+    font-weight: bold;
+    margin-top: 60%;
+}
+
 
 
 
