@@ -2,306 +2,309 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Amazon Clone</title>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
 <body>
-    <div class="clone">
-        <!-- start nav-1 -->
-        <div class="nav-1">
-            <img class="Amazon" src="Svg/Amazon1.png" alt="" />
-            <?xml version="1.0" ?><svg id="Icons" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
-                <defs>
-                    <style>
-                        .cls-1 {
-                            fill: url(#linear-gradient);
-                        }
+    <header>
+        <nav>
+            <div class="nav-left">
+                <div class="nav-logo">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240326183545/amazon.png">
+                </div>
+                <div class="location">
+                    <p class="top-text">Deliver to</p>
+                    <div class="location-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="bottom-text">India</p>
+                    </div>
+                </div>
+            </div>
 
-                        .cls-2 {
-                            fill: url(#linear-gradient-2);
-                        }
-                    </style>
-                    <linearGradient gradientUnits="userSpaceOnUse" id="linear-gradient" x1="12" x2="12" y1="1.085"
-                        y2="22.874">
-                        <stop offset="0" stop-color="#ffff" />
-                        <stop offset="1" stop-color="#ffff" />
-                    </linearGradient>
-                    <linearGradient gradientUnits="userSpaceOnUse" id="linear-gradient-2" x1="12" x2="12" y1="6.021"
-                        y2="13.979">
-                        <stop offset="0" stop-color="#fffff" />
-                        <stop offset="1" stop-color="#fffff" />
-                    </linearGradient>
-                </defs>
-                <path class="cls-1" d="M21,10c0,8-9,13-9,13S3,18,3,10a9,9,0,0,1,18,0Z" />
-                <circle class="cls-2" cx="12" cy="10" r="4" />
-            </svg>
-            <span>Belivering to Geogre Town 211002<br />
-                <h3>Update Location</h3>
-            </span>
-            <input type="search" placeholder="search Amazon.in" />
-            <button type="submit"><i class="fa fa-search"></i></button>
-            <i class="fa fa-flag" aria-hidden="true"></i>
-            <h5>En</h5>
-            <i class="nav-icon nav-arrow"></i>
-            <div class="nav-line-1-container">
-                <span id="nav-link-accountList-nav-line-1" class="nav-line-1 nav-progressive-content">Hello, sign
-                    in</span><br />
-                <span class="nav-line-2">Account &amp; Lists</span>
+            <div class="nav-center">
+                <select class="search-dropdown">
+                    <option>All</option>
+                    <option>All Departments</option>
+                    <option>Arts & Crafts</option>
+                </select>
+                <input type="text" placeholder="Search Amazon" class="search-box">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #28416c;">
+                    </i>
+                </div>
             </div>
-            <div class="nav-line-1-container">
-                <span>Return</span><br />
-                <span class="nav-line-2"> &amp; Oders</span>
+
+            <div class="nav-right">
+                <div class="language-option">
+                    <div class="flag">
+                        <i class="fa-regular fa-flag"></i>
+                    </div>
+                    <select class="select-language">
+                        <option value="lan">EN</option>
+                        <option value="lan">ES</option>
+                        <option value="lan">AR</option>
+                    </select>
+                </div>
+
+                <div class="account-option">
+                    <p class="top-text">
+                        Hello, sign in
+                    </p>
+                    <select class="select-account">
+                        <option value="Account">
+                            Account & Lists
+                        </option>
+                        <option value="Account">
+                            Account & Lists
+                        </option>
+                        <option value="Account">
+                            Account & Lists
+                        </option>
+                    </select>
+                </div>
+
+                <div class="order-option">
+                    <p class="top-text">
+                        Returns
+                    </p>
+                    <p class="bottom-text">
+                        & Orders
+                    </p>
+                </div>
+
+                <div class="cart-option">
+                    <div class="cart-logo">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    Cart
+                </div>
             </div>
-            <div class="cart">
-                <i class="fa fa-shopping-cart" style="
-                font-size: 60px;
-                margin-left: 60px;
-                margin-top: 10px;
-                color: yellow;
-                margin-bottom: 10px;"></i>
+        </nav>
+
+        <div class="nav-options">
+            <div class="all-logo">
+                <i class="fa-solid fa-bars"></i>
+                <p class="list">All</p>
+            </div>
+
+            <div class="options">
+                <p>Today's Deals</p>
+                <p>Customer Service</p>
+                <p>Registry</p>
+                <p>Gift Cards</p>
+                <p> Sell</p>
             </div>
         </div>
-        <!-- End Nav-1 -->
+    </header>
 
-        <!-- start Naav-2 -->
-        <div class="nav-2">
-            <i class="fa fa-bars" style="font-size: 17px; margin-left: 15px; color: rgb(202, 199, 192); margin-top: 10px;"></i>
-            <h4>All</h4>
-            <h4 style="margin-left: 30px; font-weight: bold;">AmazonminiTV</h4>
-            <h4 style="margin-left: 30px;">Sell</h4>
-            <h4 style="margin-left: 30px;">Best Sellers</h4>
-            <h4 style="margin-left: 30px;">Mobie</h4>
-            <h4 style="margin-left: 30px;">Today Deals</h4>
-            <h4 style="margin-left: 30px;">Electronic</h4>
-            <!-- <a href="" role="button" type="widget">
-                <i class="fa fa-bars" style="font-size: 25px; margin-left: 20px; color: rgb(202, 199, 192); margin-top: 10px;"></i>
-                <span class="option">All</span>
-            </a>
-            <a href="">amazonminitv</a>
-            <span style="font-weight: bold; color: white;">yfcvgh</span> -->
-        </div>
+    <main>
         <div class="carousel">
-            <div class="carousel-item">
-                <img class="carousel-item" src="Svg/carousel5.jpg" alt="Carousel Item"/>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-item">
-                <h2 class="heading">Revamp Your Home in <br> Sale</h2>
-                <img class="img" src="Svg/img1.jpg" alt="">
-                <img class="img" src="Svg/img2.jpg" alt="">
-                <img class="img" src="Svg/img3.jpg" alt="">
-                <img class="img" src="Svg/img4.jpg" alt="">
-            </div>
-            <div class="card-item">
-                <h2 class="heading">Appliances for Your Home |Up to 50% off</h2>
-                <img class="img" src="Svg/img1.jpg" alt="">
-                <img class="img" src="Svg/img2.jpg" alt="">
-                <img class="img" src="Svg/img3.jpg" alt="">
-                <img class="img" src="Svg/img4.jpg" alt="">
-            </div>
-            <div class="card-item">
-                <h2 class="heading">Up to 50% off | Styles for mens</h1>
-                    <img class="img" src="Svg/img1.jpg" alt="">
-                <img class="img" src="Svg/img2.jpg" alt="">
-                <img class="img" src="Svg/img3.jpg" alt="">
-                <img class="img" src="Svg/img4.jpg" alt="">
-            </div>
-            <div class="card-item">
-                <h2 class="heading">Starting &#8377 99 | All your home improvment needs</h2>
-                <img class="img" src="Svg/img1.jpg" alt="">
-                <img class="img" src="Svg/img2.jpg" alt="">
-                <img class="img" src="Svg/img3.jpg" alt="">
-                <img class="img" src="Svg/img4.jpg" alt="">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-item">
-                <h2 class="heading">Revamp Your Home in <br> Sale</h2>
-                <img class="img" src="Svg/img1.jpg" alt="">
-                <img class="img" src="Svg/img2.jpg" alt="">
-                <img class="img" src="Svg/img3.jpg" alt="">
-                <img class="img" src="Svg/img4.jpg" alt="">
-            </div>
-            <div class="card-item">
-                <h2 class="heading">Appliances for Your Home |Up to 50% off</h2>
-                <img class="img" src="Svg/img1.jpg" alt="">
-                <img class="img" src="Svg/img2.jpg" alt="">
-                <img class="img" src="Svg/img3.jpg" alt="">
-                <img class="img" src="Svg/img4.jpg" alt="">
-            </div>
-            <div class="card-item">
-                <h2 class="heading">Up to 50% off | Styles for mens</h1>
-                    <img class="img" src="Svg/img1.jpg" alt="">
-                <img class="img" src="Svg/img2.jpg" alt="">
-                <img class="img" src="Svg/img3.jpg" alt="">
-                <img class="img" src="Svg/img4.jpg" alt="">
-            </div>
-            <div class="card-item">
-                <h2 class="heading">Starting &#8377 99 | All your home improvment needs</h2>
-                <img class="img" src="Svg/img1.jpg" alt="">
-                <img class="img" src="Svg/img2.jpg" alt="">
-                <img class="img" src="Svg/img3.jpg" alt="">
-                <img class="img" src="Svg/img4.jpg" alt="">
-            </div>
-        </div>
-        <div class="card">
-            <div class="banner">
-                <h2 class="header">EMI Starting at &#8377 105/day | Electric scooter & moterbike</h2>
-                <div class="img-banner">
-                    <img class="scotter" src="svg/scotter.jpg" alt="">
-                    <img class="scotter" src="svg/scooter1.jpg" alt="">
-                    <img class="scotter" src="svg/scooter2.jpg" alt="">
-                    <img class="scotter" src="svg/scooter3.jpg" alt="">
-                    <img class="scotter" src="svg/scooter4.jpg" alt="">
-                    <img class="scotter" src="svg/scooter5.jpg" alt="">
-                    <img class="scotter" src="svg/scooter6.jpg" alt="">
-                    <img class="scotter" src="svg/scooter2.jpg" alt="">
-                    <img class="scotter" src="svg/scooter3.jpg" alt="">
-                    <img class="scotter" src="svg/scooter4.jpg" alt="">
-                    <img class="scotter" src="svg/scooter5.jpg" alt="">
-                    <img class="scotter" src="svg/scooter6.jpg" alt="">
+            <div class="slides-container">
+                <div id="slide1" class="slide">
+                    <div class="content">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240326122916/image11.jpg">
+                    </div>
+                    <a href="#slide3" class="prev arrow">
+                        <i class="fa-solid fa-chevron-left" style="color: #ffffff;">
+                        </i>
+                    </a>
+                    <a href="#slide2" class="next arrow">
+                        <i class="fa-solid fa-chevron-right" style="color: #ffffff;">
+                        </i>
+                    </a>
+                </div>
+                <div id="slide2" class="slide">
+                    <div class="content">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240326122915/image8.jpg">
+                    </div>
+                    <div class="arrows"></div>
+                    <a href="#slide1" class="prev arrow">
+                        <i class="fa-solid fa-chevron-left" style="color: #ffffff;">
+                        </i>
+                    </a>
+                    <a href="#slide3" class="next arrow">
+                        <i class="fa-solid fa-chevron-right" style="color: #ffffff;">
+                        </i>
+                    </a>
+                </div>
+                <div id="slide3" class="slide">
+                    <div class="content">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240326121955/image.jpg">
+                    </div>
+                    <div class="arrows"></div>
+                    <a href="#slide2" class="prev arrow">
+                        <i class="fa-solid fa-chevron-left" style="color: #ffffff;">
+                        </i>
+                    </a>
+                    <a href="#slide1" class="next arrow">
+                        <i class="fa-solid fa-chevron-right" style="color: #ffffff;">
+                        </i>
+                    </a>
                 </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="banner">
-                <h2 class="header">Up to 40% off | Premium furniture collection from stores near you</h2>
-                <div class="img-banner">
-                    <img class="scotter" src="svg/chair.jpg" alt="">
-                    <img class="scotter" src="svg/chair1.jpg" alt="">
-                    <img class="scotter" src="svg/chair2.jpg" alt="">
-                    <img class="scotter" src="svg/chair3.jpg" alt="">
-                    <img class="scotter" src="svg/chair4.jpg" alt="">
-                    <img class="scotter" src="svg/chair5.jpg" alt="">
-                    <img class="scotter" src="svg/chair6.jpg" alt="">
-                    <img class="scotter" src="svg/chair7.jpg" alt="">
-                    <img class="scotter" src="svg/chair8.jpg" alt="">
-                    <img class="scotter" src="svg/chair6.jpg" alt="">
-                    <img class="scotter" src="svg/chair5.jpg" alt="">
-                    <img class="scotter" src="svg/chair8.jpg" alt="">
-                </div>
+            <div class="text">
+                <p>
+                    You are on amazon.com. You can also shop
+                    on Amazon India for millions of products
+                    with fast local delivery.
+                    <a href="#">
+                        Click here to go to amazon.in
+                    </a>
+                </p>
             </div>
         </div>
-        <div class="card">
-            <div class="card2">
-                <h2 class="header1">Best Sellers in Womens Indian Clothing</h2>
-                <img class="women" src="svg/women.jpg" alt="">
-                <img class="women" src="Svg/women1.jpg" alt="">
-                <img class="women" src="Svg/women2.jpg" alt="">
-                <img class="women" src="Svg/women3.jpg" alt="">
+
+        <div class="items-container">
+            <div class="item-card">
+                <h2>Gaming accessories</h2>
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240326122918/image14.jpg">
+                <p>
+                    <a href="#">See more</a>
+                </p>
             </div>
-            <div class="card2">
-                <h2 class="header1">Under ₹499 | Pocket-friendly fashion</h2>
-                <img class="women1" src="svg/fashion.jpg" alt="">
-                <img class="women1" src="Svg/fashion1.jpg" alt="">
-                <img class="women1" src="Svg/fashion2.jpg" alt="">
-                <img class="women1" src="Svg/fashion3.jpg" alt="">
+            <div class="item-card">
+                <h2>Deal in PCs</h2>
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240326122917/image12.jpg">
+                <p>
+                    <a href="#">See more</a>
+                </p>
             </div>
-            <div class="card2">
-                <h2 class="header1">Up to 70% off | Holi essentials from stores</h2>
-                <img class="women2" src="svg/holi.jpg" alt="">
-                <img class="women2" src="Svg/holi1.jpg" alt="">
-                <img class="women2" src="Svg/holi2.jpg" alt="">
-                <img class="women2" src="Svg/holi3.jpg" alt="">
+            <div class="item-card">
+                <h2>Amazon Gadget Store</h2>
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240326122918/image15.jpg">
+                <p>
+                    <a href="#">See more</a>
+                </p>
             </div>
-            <div class="card2">
-                <h2 class="header1">Min. 60% off | Outdoor lights</h2>
-                <img class="women3" src="svg/lights.jpg" alt="">
+            <div class="item-card">
+                <h2>Handpicked music</h2>
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240326122916/image11.jpg">
+                <p>
+                    <a href="#">See more</a>
+                </p>
+            </div>
+            <div class="item-card">
+                <h2>Fill your Easter basket</h2>
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240326121956/image3.jpg">
+                <p>
+                    <a href="#">See more</a>
+                </p>
+            </div>
+            <div class="item-card">
+                <h2>Top Deal</h2>
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240326122915/image8.jpg">
+                <p>
+                    <a href="#">See more</a>
+                </p>
+            </div>
+            <div class="item-card">
+                <h2>Shop deals in Fashion</h2>
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240326122915/image9.jpg">
+                <p>
+                    <a href="#">See more</a>
+                </p>
+            </div>
+            <div class="item-card">
+                <h2>Gaming merchandise</h2>
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240326122917/image13.jpg">
+                <p>
+                    <a href="#">See more</a>
+                </p>
+            </div>
+            <div class="item-card">
+                <h2>Movies</h2>
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240326121955/image.jpg">
+                <p>
+                    <a href="#">See more</a>
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <a href="#" class="back-option">
+            Back to top
+        </a>
+
+        <div class="footer-links">
+            <ul>
+                <p>Get to Know Us</p>
+                <a>Careers</a>
+                <a>Blog</a>
+                <a>About Amazon</a>
+                <a>Investor Relations</a>
+                <a>Amazon Devices</a>
+                <a>Amazon Science</a>
+            </ul>
+            <ul>
+                <p>Make Money with Us</p>
+                <a>Sell products on Amazon</a>
+                <a>Sell on Amazon Business</a>
+                <a>Sell apps on Amazon</a>
+                <a>Become an Affiliate</a>
+                <a>Self-Publish with Us</a>
+                <a>Host an Amazon Hub</a>
+                <a>›See More Make Money with Us</a>
+            </ul>
+            <ul>
+                <p>Amazon Payment Products</p>
+                <a>Amazon Business Card</a>
+                <a>Shop with Points</a>
+                <a>Reload Your Balance</a>
+                <a>Amazon Currency Converter</a>
+            </ul>
+            <ul>
+                <p>Let Us Help You</p>
+                <a>Amazon and COVID-19</a>
+                <a>Your Account</a>
+                <a>Your Orders</a>
+                <a>Shipping Rates & Policies</a>
+                <a>Returns & Replacements</a>
+                <a>Manage Your Content and Devices</a>
+                <a>Amazon Assistant</a>
+                <a>Help</a>
+            </ul>
+        </div>
+        <div class="country-info">
+            <div class="logo">
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240326183545/amazon.png">
+            </div>
+            <div class="options">
+                <select>
+                    <option value="En">
+                        English
+                    </option>
+                </select>
+                <select>
+                    <option value="1">
+                        $ USD - U.S. Dollar
+                    </option>
+                </select>
+
+                <select>
+                    <option value="4">
+                        United states
+                    </option>
+                </select>
             </div>
         </div>
-        <div class="cards">
-            <div class="banner2">
-                <h2 class="header">Deilvered within 48 hours | Holi herbal colours & pichkaris from stores near you</h2>
-                <div class="img-banner">
-                    <img class="scotter" src="svg/stores.jpg" alt="">
-                    <img class="scotter" src="svg/stores1.jpg" alt="">
-                    <img class="scotter" src="svg/stores2.jpg" alt="">
-                    <img class="scotter" src="svg/stores3.jpg" alt="">
-                    <img class="scotter" src="svg/stores4.jpg" alt="">
-                    <img class="scotter" src="svg/stores5.jpg" alt="">
-                    <img class="scotter" src="svg/stores6.jpg" alt="">
-                    <img class="scotter" src="svg/stores7.jpg" alt="">
-                    <img class="scotter" src="svg/stores8.jpg" alt="">
-                    <img class="scotter" src="svg/stores9.jpg" alt="">
-                    <img class="scotter" src="svg/stores10.jpg" alt="">
-                    <img class="scotter" src="svg/stores.jpg" alt="">
-                </div>
+        <div class="policies">
+            <div class="pages">
+                <a href="#">Conditions of Use</a>
+                <a href="#">Privacy Notice</a>
+                <a href="#">Your Ads Privacy Choices</a>
             </div>
+            © 1996-2023, Amazon.com, Inc. or its affiliates
         </div>
-        <div class="card">
-            <div class="card2">
-                <h2 class="header1">Customers’ Most-Loved Fashion for you</h2>
-                <img class="women1" src="svg/cards.jpg" alt="">
-                <img class="women1" src="Svg/cards1.jpg" alt="">
-                <img class="women1" src="Svg/cards2.jpg" alt="">
-                <img class="women1" src="Svg/cards3.jpg" alt="">
-            </div>
-            <div class="card2">
-                <h2 class="header1">Up to 60% off | Car, bike parts & accessories</h2>
-                <img class="women3" src="svg/cards4.jpg" alt="">
-            </div>
-            <div class="card2">
-                <h2 class="header1">Season finale streaming now | Watch only on</h2>
-                <img class="women3" src="svg/cards5.jpg" alt="">
-            </div>
-            <div class="card2">
-                <h2 class="header1">Starting ₹99 | Start your fitness journey</h2>
-                <img class="women3" src="svg/cards6.jpg" alt="">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card3">
-                <h2 class="header1">Up to 20% off | Offers on flight tickets</h2>
-                <img class="women1" src="svg/card.jpg" alt="">
-                <img class="women1" src="Svg/card1.jpg" alt="">
-                <img class="women1" src="Svg/card2.jpg" alt="">
-                <img class="women1" src="Svg/card3.jpg" alt="">
-            </div>
-            <div class="card3">
-                <h2 class="header1">Diabetes care devices | Up to 50% off</h2>
-                <img class="women3" src="svg/card4.jpg" alt="">
-            </div>
-            <div class="card3">
-                <h2 class="header1">One stop shop for all your wedding shopping</h2>
-                <img class="women1" src="svg/card5.jpg" alt="">
-                <img class="women1" src="Svg/card6.jpg" alt="">
-                <img class="women1" src="Svg/card7.jpg" alt="">
-                <img class="women1" src="Svg/card8.jpg" alt="">
-            </div>
-            <div class="card3">
-                <h2 class="header1">Up to 60% off | AC, coolers & more </h2>
-                <img class="women3" src="svg/card9.jpg" alt="">
-            </div>
-        </div>
-    </div>
-    <div class="footer">
-        <img class="amazon1" src="Svg/Amazon1.png" alt="">
-        <div class="city">
-            <span>Austrila</span>
-            <span>Brazil</span>
-            <span>Canda</span>
-            <span>China</span>
-            <span>France</span>
-            <span>Germony</span>
-            <span>Itly</span>
-            <span>Japan</span>
-            <span>Maxico</span>
-            <span>Netherland</span>
-            <span>Poland</span>
-            <span>Singapore</span>
-            <span>Spain</span>
-            <span>Turkey</span>
-            <span>United Arab Emirates</span>
-            <span>United Kingdom</span>
-            <span style="margin-left: 40%;">United States</span>
-        </div>
-    </div>
+    </footer>
 </body>
 
 </html>
